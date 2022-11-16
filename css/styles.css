@@ -5,117 +5,91 @@
   --header-logo-color: #000000;
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196F3;
-  --color-tuna: #2F303A;
-  --color-whisper: #F5F4FA;
-  --bg-hero: var(--color-tuna);
-  --bg-footer: var(--color-tuna);
-  --bg-team: var(--color-whisper);
-  --bg-buttons: var(--color-whisper);
+  --tuna-color: #2F303A;
+  --whisper-color: #F5F4FA;
+  --bg-hero: var(--tuna-color);
+  --bg-footer: var(--tuna-color);
+  --bg-team: var(--whisper-color);
+  --bg-buttons: var(--whisper-color);
 }
 
 body {
-  background-color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: .03em;
   color: var(--primary-text-color);
   
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: .03em;;
+  background-color: var(--primary-white-color);
 }
 
 /* Logo */
 
 .logo {
-  color: var(--accent-color);
-  
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-
   text-decoration: none;
+  color: var(--accent-color);
 }
 
-.header-logo {
-  color: var(--header-logo-color);
-}
+.header-logo { color: var(--header-logo-color); }
 
-.footer-logo {
-  color: var(--primary-white-color);
-}
+.footer-logo { color: var(--primary-white-color); }
 
 /* Site nav */
 
 .site-nav .link,
 .header-contacts .link {
-  color: var(--title-text-color);
-  
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: .02em;
-
   text-decoration: none;
+  color: var(--title-text-color);
 }
 
 .site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
+.site-nav .link:focus { color: var(--accent-color); }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
+.site-nav .link.current { color: var(--accent-color); }
 
 /* Contacts */
 
-.header-contacts .link {
-  color: var(--primary-text-color);
-}
+.header-contacts .link { color: var(--primary-text-color); }
 
 .header-contacts .link:hover,
-.header-contacts .link:focus {
-  color: var(--accent-color);
-}
+.header-contacts .link:focus { color: var(--accent-color); }
 
 /* Footer */
 
-.footer {
-  background-color: var(--bg-footer);
-}
+.footer { background-color: var(--bg-footer); }
 
 .footer-contacts .link {
-  color: var(--footer-contacts-color);
-
   font-size: 14px;
   line-height: 1.71;
-
   font-style: normal;
   text-decoration: none;
+  color: var(--footer-contacts-color);
 }
 
-.link.geolink {
-  color: var(--primary-white-color);
-}
+.link.geolink { color: var(--primary-white-color); }
 
 .footer-contacts .link:hover,
-.footer-contacts .link:focus {
-  color: var(--accent-color);
-}
+.footer-contacts .link:focus { color: var(--accent-color); }
 
 /* List */
 
-.list {
-  list-style: none;
-}
+.list { list-style: none; }
 
 /* Buttons */
 
 .buttons {
-  background-color: var(--bg-buttons);
+  font-size: 16px;
+  text-align: center;
   color: var(--title-text-color);
 
-  font-size: 16px;
+  background-color: var(--bg-buttons);
 
-  text-align: center;
   cursor: pointer;
 }
 
@@ -140,46 +114,36 @@ body {
 
 /* Hero */
 
-.hero {
-  background-color: var(--bg-hero);
-}
+.hero { background-color: var(--bg-hero); }
 
 .hero-title {
-  color: var(--primary-white-color);
-  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-
   text-align: center;
   letter-spacing: .06em;
-  text-transform: uppercase;    
+  text-transform: uppercase;
+  color: var(--primary-white-color);
 }
 
 /* Section */
 
 .section-title {
-    color: var(--title-text-color);
-    
-    font-size: 36px;
-    line-height: 1.17;
-
-    text-align: center;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
 }
 
-.section-team {
-  background-color: var(--bg-team);
-}
+.section-team { background-color: var(--bg-team); }
 
 /* Features */
 
 .features-title {
-  color: var(--title-text-color);
-  
   font-size: 14px;
   line-height: 1.14;
-  
   text-transform: uppercase;
+  color: var(--title-text-color);
 }
 
 .features-text {
@@ -190,11 +154,10 @@ body {
 /* Team */
 
 .name {
-  color: var(--title-text-color);
-    
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  color: var(--title-text-color);
 }
 
 .position {
@@ -207,17 +170,15 @@ body {
 /* Projects list */
 
 .project-name {
-  color: var(--title-text-color);
-  
   font-size: 18px;
   line-height: 2;
   letter-spacing: .06em;
+  color: var(--title-text-color);
 }
 
 .project-type {
-  color: var(--primary-text-color);
-
   font-size: 16px;
   line-height: 1.88;
+  color: var(--primary-text-color);
 }
 
