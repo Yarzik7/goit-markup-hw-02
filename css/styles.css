@@ -84,6 +84,7 @@ body {
 /* Buttons */
 
 .buttons {
+  font-family: inherit;
   font-size: 16px;
   text-align: center;
   color: var(--title-text-color);
