@@ -1,12 +1,16 @@
 :root {
   --primary-white-color: #ffffff;
-  --primary-title-color: #212121;
   --primary-text-color: #757575;
-  --footer-contacts-color: rgba(255, 255, 255, 0.6);
-  --bg-hero-footer: #2F303A;
-  --bg-team-buttons: #F5F4FA;
+  --title-text-color: #212121;
   --header-logo-color: #000000;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --accent-color: #2196F3;
+  --color-tuna: #2F303A;
+  --color-whisper: #F5F4FA;
+  --bg-hero: var(--color-tuna);
+  --bg-footer: var(--color-tuna);
+  --bg-team: var(--color-whisper);
+  --bg-buttons: var(--color-whisper);
 }
 
 body {
@@ -42,7 +46,7 @@ body {
 
 .site-nav .link,
 .header-contacts .link {
-  color: var(--primary-title-color);
+  color: var(--title-text-color);
   
   font-weight: 500;
   font-size: 14px;
@@ -75,7 +79,7 @@ body {
 /* Footer */
 
 .footer {
-  background-color: var(--bg-hero-footer);
+  background-color: var(--bg-footer);
 }
 
 .footer-contacts .link {
@@ -88,7 +92,7 @@ body {
   text-decoration: none;
 }
 
-.link.address-link {
+.link.geolink {
   color: var(--primary-white-color);
 }
 
@@ -106,8 +110,8 @@ body {
 /* Buttons */
 
 .buttons {
-  background-color: var(--bg-team-buttons);
-  color: var(--primary-title-color);
+  background-color: var(--bg-buttons);
+  color: var(--title-text-color);
 
   font-size: 16px;
 
@@ -137,7 +141,7 @@ body {
 /* Hero */
 
 .hero {
-  background-color: var(--bg-hero-footer);
+  background-color: var(--bg-hero);
 }
 
 .hero-title {
@@ -155,7 +159,7 @@ body {
 /* Section */
 
 .section-title {
-    color: var(--primary-title-color);
+    color: var(--title-text-color);
     
     font-size: 36px;
     line-height: 1.17;
@@ -164,13 +168,13 @@ body {
 }
 
 .section-team {
-  background-color: var(--bg-team-buttons);
+  background-color: var(--bg-team);
 }
 
 /* Features */
 
 .features-title {
-  color: var(--primary-title-color);
+  color: var(--title-text-color);
   
   font-size: 14px;
   line-height: 1.14;
@@ -186,7 +190,7 @@ body {
 /* Team */
 
 .name {
-  color: var(--primary-title-color);
+  color: var(--title-text-color);
     
   font-weight: 500;
   font-size: 16px;
@@ -203,11 +207,11 @@ body {
 /* Projects list */
 
 .project-name {
-  color: var(--primary-title-color);
+  color: var(--title-text-color);
   
   font-size: 18px;
   line-height: 2;
-  letter-spacing: 0.06em;
+  letter-spacing: .06em;
 }
 
 .project-type {
